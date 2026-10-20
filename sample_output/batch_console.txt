@@ -1,0 +1,135 @@
+Found 17 PDFs to process
+Vision LLM: ready (llama3.2-vision:latest)
+  fallback ready: qwen2.5vl:3b
+[Gate 1   duplicate hash   ] PASS  
+[Gate 2.1 vendor identity ] PASS  matched V001 (EuroFuel GmbH) score=1.0
+[Gate 2.2 key-values      ] PASS  
+[Gate 3   dedup / PO      ] PASS  no historical duplicates; not on file - overdraw check skipped
+[Gate 4   integrity       ] PASS  3 line items OK; subtotal+VAT==total; currency EUR approved
+[Gate 5   routing         ] PASS  8551.67 EUR (rate 1.0 from identity) <= threshold 45000.0 EUR; single approval
+[1/17] INV-2025-03701_V001_EuroFuel.pdf -> CLEARED_STANDARD - complete (25.4s)
+[Gate 1   duplicate hash   ] PASS  
+[Gate 2.1 vendor identity ] PASS  matched V004 (FleetMech GmbH) score=1.0
+[Gate 2.2 key-values      ] PASS  
+[Gate 3   dedup / PO      ] PASS  no historical duplicates; not on file - overdraw check skipped
+[Gate 4   integrity       ] PASS  3 line items OK; subtotal+VAT==total; currency EUR approved
+[Gate 5   routing         ] PASS  6799.99 EUR (rate 1.0 from identity) <= threshold 30000.0 EUR; single approval
+[2/17] INV-2025-03712_V004_FleetMech.pdf -> CLEARED_STANDARD - complete (25.3s)
+[Gate 1   duplicate hash   ] PASS  
+[Gate 2.1 vendor identity ] PASS  matched V005 (AutoServ S.R.L.) score=1.0
+[Gate 2.2 key-values      ] PASS  
+[Gate 3   dedup / PO      ] PASS  no historical duplicates; not on file - overdraw check skipped
+[Gate 4   integrity       ] PASS  3 line items OK; subtotal+VAT==total; currency EUR approved
+[Gate 5   routing         ] PASS  5400.01 EUR (rate 1.0 from identity) <= threshold 25000.0 EUR; single approval
+[3/17] INV-2025-03719_V005_AutoServ.pdf -> CLEARED_STANDARD - complete (25.9s)
+[Gate 1   duplicate hash   ] PASS  
+[Gate 2.1 vendor identity ] PASS  matched V006 (BritTech Solutions Ltd) score=1.0
+[Gate 2.2 key-values      ] PASS  
+[Gate 3   dedup / PO      ] PASS  no historical duplicates; not on file - overdraw check skipped
+[Gate 4   integrity       ] PASS  3 line items OK; subtotal+VAT==total; currency GBP approved
+[Gate 5   routing         ] PASS  5932.48 EUR (rate 1.186971 from open.er-api.com) <= threshold 20000.0 EUR; single approval
+[4/17] INV-2025-03731_V006_BritTech_GBP.pdf -> CLEARED_STANDARD - complete (24.9s)
+[Gate 1   duplicate hash   ] PASS  
+[Gate 2.1 vendor identity ] PASS  matched V008 (CleanStation S.A.) score=1.0
+[Gate 2.2 key-values      ] PASS  
+[Gate 3   dedup / PO      ] PASS  no historical duplicates; not on file - overdraw check skipped
+[Gate 4   integrity       ] PASS  3 line items OK; subtotal+VAT==total; currency EUR approved
+[Gate 5   routing         ] PASS  3199.99 EUR (rate 1.0 from identity) <= threshold 8000.0 EUR; single approval
+[5/17] INV-2025-03744_V008_CleanStation.pdf -> CLEARED_STANDARD - complete (25.0s)
+[Gate 1   duplicate hash   ] PASS  
+[Gate 2.1 vendor identity ] PASS  matched V009 (SparkIT BV) score=1.0
+[Gate 2.2 key-values      ] FAIL  no PO reference found on the invoice (mandatory field)
+[6/17] INV-2025-03752_V009_SparkIT_NoPO.pdf -> FLAGGED_MISSING_PO - gate2.2 (23.9s)
+[Gate 1   duplicate hash   ] PASS  
+[Gate 2.1 vendor identity ] PASS  matched V010 (StationOps GmbH) score=1.0
+[Gate 2.2 key-values      ] PASS  
+[Gate 3   dedup / PO      ] PASS  no historical duplicates; not on file - overdraw check skipped
+[Gate 4   integrity       ] PASS  3 line items OK; subtotal+VAT==total; currency EUR approved
+[Gate 5   routing         ] PASS  10010.46 EUR (rate 1.0 from identity) <= threshold 22000.0 EUR; single approval
+[7/17] INV-2025-03760_V010_StationOps.pdf -> CLEARED_STANDARD - complete (22.9s)
+[Gate 1   duplicate hash   ] PASS  
+[Gate 2.1 vendor identity ] PASS  matched V012 (MediaBoost GmbH) score=1.0
+[Gate 2.2 key-values      ] PASS  
+[Gate 3   dedup / PO      ] PASS  no historical duplicates; not on file - overdraw check skipped
+[Gate 4   integrity       ] PASS  3 line items OK; subtotal+VAT==total; currency EUR approved
+[Gate 5   routing         ] PASS  4512.02 EUR (rate 1.0 from identity) <= threshold 12000.0 EUR; single approval
+[8/17] INV-2025-03771_V012_MediaBoost.pdf -> CLEARED_STANDARD - complete (24.3s)
+[Gate 1   duplicate hash   ] PASS  
+[Gate 2.1 vendor identity ] PASS  matched V013 (NordClean ApS) score=1.0
+[Gate 2.2 key-values      ] PASS  
+[Gate 3   dedup / PO      ] PASS  no historical duplicates; not on file - overdraw check skipped
+[Gate 4   integrity       ] PASS  3 line items OK; subtotal+VAT==total; currency EUR approved
+[Gate 5   routing         ] PASS  2900.01 EUR (rate 1.0 from identity) <= threshold 7000.0 EUR; single approval
+[9/17] INV-2025-03779_V013_NordClean.pdf -> CLEARED_STANDARD - complete (24.2s)
+[Gate 1   duplicate hash   ] PASS  
+[Gate 2.1 vendor identity ] PASS  matched V002 (AlpinaDiesel AG) score=1.0
+[Gate 2.2 key-values      ] FAIL  extraction mismatch on total_amount: PDF text -> 42121.24 vs vision LLM -> 2121.24 - needs human review
+[10/17] INV-2025-03788_V002_AlpinaDiesel.pdf -> FLAGGED_EXTRACTION_MISMATCH - gate2.2 (24.2s)
+[Gate 1   duplicate hash   ] PASS  
+[Gate 2.1 vendor identity ] PASS  matched V014 (IberMaint S.L.) score=1.0
+[Gate 2.2 key-values      ] PASS  
+[Gate 3   dedup / PO      ] PASS  no historical duplicates; not on file - overdraw check skipped
+[Gate 4   integrity       ] PASS  3 line items OK; subtotal+VAT==total; currency EUR approved
+[Gate 5   routing         ] PASS  8200.0 EUR (rate 1.0 from identity) <= threshold 28000.0 EUR; single approval
+[11/17] INV-2025-03791_V014_IberMaint.pdf -> CLEARED_STANDARD - complete (23.2s)
+[Gate 1   duplicate hash   ] PASS  
+[Gate 2.1 vendor identity ] PASS  matched V003 (TotalRoute S.A.) score=1.0
+[Gate 2.2 key-values      ] PASS  
+[Gate 3   dedup / PO      ] PASS  no historical duplicates; not on file - overdraw check skipped
+[Gate 4   integrity       ] PASS  3 line items OK; subtotal+VAT==total; currency EUR approved
+[Gate 5   routing         ] PASS  5788.11 EUR (rate 1.0 from identity) <= threshold 40000.0 EUR; single approval
+[12/17] INV-2025-03847_V003_TotalRoute.pdf -> CLEARED_STANDARD - complete (22.2s)
+[Gate 1   duplicate hash   ] PASS  
+[Gate 2.1 vendor identity ] FAIL  vendor V018 (OldGuard Security NV) is INACTIVE
+[13/17] INV-2025-03880_V018_OldGuard_INACTIVE.pdf -> FLAGGED_INACTIVE_VENDOR - gate2.1 (10.9s)
+[Gate 1   duplicate hash   ] PASS  
+[Gate 2.1 vendor identity ] PASS  matched V007 (SecureGuard AG) score=1.0
+[Gate 2.2 key-values      ] PASS  
+[Gate 3   dedup / PO      ] PASS  no historical duplicates; not on file - overdraw check skipped
+[Gate 4   integrity       ] PASS  2 line items OK; subtotal+VAT==total; currency EUR approved
+[Gate 5   routing         ] PASS  vendor V007 requires dual approval; 18499.5 EUR <= threshold 35000.0 EUR
+[14/17] INV-2025-03901_V007_SecureGuard.pdf -> DUAL_APPROVAL - complete (22.1s)
+[Gate 1   duplicate hash   ] PASS  
+[Gate 2.1 vendor identity ] FAIL  no vendor_master match for 'LogiTrans Express SRL' (best: DataSphere SAS @ 0.4571 < 0.7)
+[15/17] INV-2025-03955_UNKNOWN_LogiTrans.pdf -> FLAGGED_UNKNOWN_VENDOR - gate2.1 (10.7s)
+[Gate 1   duplicate hash   ] PASS  
+[Gate 2.1 vendor identity ] PASS  matched V015 (QuickFix OÜ) score=1.0
+[Gate 2.2 key-values      ] PASS  
+[Gate 3   dedup / PO      ] PASS  no historical duplicates; not on file - overdraw check skipped
+[Gate 4   integrity       ] PASS  3 line items OK; subtotal+VAT==total; currency EUR approved
+[Gate 5   routing         ] PASS  1606.5 EUR (rate 1.0 from identity) <= threshold 10000.0 EUR; single approval
+[16/17] INV-2025-SCAN-001_V015_QuickFix.pdf -> CLEARED_STANDARD - complete (21.9s)
+[Gate 1   duplicate hash   ] PASS  
+[Gate 2.1 vendor identity ] PASS  matched V016 (PolyClean Sp.z.o.o.) score=1.0
+[Gate 2.2 key-values      ] PASS  
+[Gate 3   dedup / PO      ] PASS  no historical duplicates; not on file - overdraw check skipped
+[Gate 4   integrity       ] PASS  3 line items OK; subtotal+VAT==total; currency EUR approved
+[Gate 5   routing         ] PASS  2058.7 EUR (rate 1.0 from identity) <= threshold 6000.0 EUR; single approval
+[17/17] INV-2025-SCAN-002_V016_PolyClean.pdf -> CLEARED_STANDARD - complete (22.5s)
+=== BATCH SUMMARY batch_20261020_130914 ===
+start_time       : 2026-10-20T13:02:55
+end_time         : 2026-10-20T13:09:14
+duration_seconds : 379.0
+dry_run          : True
+total_processed  : 17
+status_counts    : CLEARED_STANDARD=12, FLAGGED_MISSING_PO=1, FLAGGED_EXTRACTION_MISMATCH=1, FLAGGED_INACTIVE_VENDOR=1, DUAL_APPROVAL=1, FLAGGED_UNKNOWN_VENDOR=1
+------------------------------------------------------------------------------------
+file_name                                status                         llm
+INV-2025-03701_V001_EuroFuel.pdf         CLEARED_STANDARD               ready
+INV-2025-03712_V004_FleetMech.pdf        CLEARED_STANDARD               ready
+INV-2025-03719_V005_AutoServ.pdf         CLEARED_STANDARD               ready
+INV-2025-03731_V006_BritTech_GBP.pdf     CLEARED_STANDARD               ready
+INV-2025-03744_V008_CleanStation.pdf     CLEARED_STANDARD               ready
+INV-2025-03752_V009_SparkIT_NoPO.pdf     FLAGGED_MISSING_PO             ready
+INV-2025-03760_V010_StationOps.pdf       CLEARED_STANDARD               ready
+INV-2025-03771_V012_MediaBoost.pdf       CLEARED_STANDARD               ready
+INV-2025-03779_V013_NordClean.pdf        CLEARED_STANDARD               ready
+INV-2025-03788_V002_AlpinaDiesel.pdf     FLAGGED_EXTRACTION_MISMATCH    ready
+INV-2025-03791_V014_IberMaint.pdf        CLEARED_STANDARD               ready
+INV-2025-03847_V003_TotalRoute.pdf       CLEARED_STANDARD               ready
+INV-2025-03880_V018_OldGuard_INACTIVE.pdf FLAGGED_INACTIVE_VENDOR        ready
+INV-2025-03901_V007_SecureGuard.pdf      DUAL_APPROVAL                  ready
+INV-2025-03955_UNKNOWN_LogiTrans.pdf     FLAGGED_UNKNOWN_VENDOR         ready
+INV-2025-SCAN-001_V015_QuickFix.pdf      CLEARED_STANDARD               ready
+INV-2025-SCAN-002_V016_PolyClean.pdf     CLEARED_STANDARD               ready
+REPORT WRITTEN batch_reports\batch_20261020_130914.json

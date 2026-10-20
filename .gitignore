@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+ap_automation.db
+ap_automation.db-*
+batch_reports/
+processed/

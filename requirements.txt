@@ -1,0 +1,16 @@
+# AP Automation - Fail-Fast Invoice Pipeline (Phase 1 + Phase 2 batch + local vision LLM)
+# Python 3.10+
+#
+# Everything except PyMuPDF is handled by the standard library:
+#   sqlite3 (database), hashlib (SHA-256), difflib (fuzzy vendor matching),
+#   re (extraction), urllib (Ollama REST API + daily FX rate API).
+#
+# Runtime service (not a pip package) for the vision cross-check in Gates 2.1/2.2:
+#   Ollama with an approved vision model:
+#     ollama pull llama3.2-vision    # primary
+#     ollama pull qwen2.5vl:3b       # fallback
+#   The LLM path is enabled by default. If it is enabled but unusable, a single
+#   invoice is flagged and a batch with queued PDFs aborts before writing
+#   ledger rows or a report. Use --no-llm (or VISION_LLM_ENABLED=0) for
+#   intentional text-only runs.
+PyMuPDF>=1.24
