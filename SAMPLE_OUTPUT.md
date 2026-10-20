@@ -11,6 +11,8 @@ console output of a complete batch run over the 17 reference PDFs in
 * **Console transcript also kept as plain text:**
   [`sample_output/batch_console.txt`](sample_output/batch_console.txt)
 
+> **Note:** local machine paths were removed from this published capture; the report path is repo-relative.
+
 ---
 
 ## 1. Environment
